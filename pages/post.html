@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Técnicas modernas en la investigación de homicidios | CrimAnálisis</title>
+    <link href="../src/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-black text-white font-sans leading-relaxed">
+
+    <!-- Navbar -->
+    <header class="absolute top-0 left-0 w-full flex justify-between items-center px-8 py-6 z-30">
+        <div class="text-2xl font-bold text-white tracking-widest uppercase"> 
+          <a href="/">CrimiAnálisis</a>
+        </div>
+        <nav class="space-x-6 text-white text-sm uppercase tracking-wide">
+          <a href="/" class="hover:text-yellow-400 transition">Inicio</a>
+          <a href="/#servicio" class="hover:text-yellow-400 transition">Servicios</a>
+          <a href="/#blog" class="hover:text-yellow-400 transition">Blog</a>
+          <a href="/#ubicacion" class="hover:text-yellow-400 transition">Ubicación</a>
+          <a href="/#contacto" class="hover:text-yellow-400 transition">Contacto</a>
+        </nav>
+      </header>
+
+    <!-- Hero del post -->
+    <section class="relative h-[60vh] w-full overflow-hidden">
+        <img src="../img/homicidios.jpg" alt="Investigación de escena del crimen"
+            class="w-full h-full object-cover opacity-60" />
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white text-center px-4 animate-fade-in">
+                Técnicas modernas en la investigación de homicidios
+            </h1>
+        </div>
+    </section>
+
+    <!-- Contenido del post -->
+    <main class="max-w-4xl mx-auto py-12 px-6 text-gray-200 space-y-6">
+        <h2 class="text-xl font-semibold text-yellow-400 uppercase tracking-wide">Análisis Criminal</h2>
+        <p>
+            La investigación de homicidios ha evolucionado significativamente en las últimas décadas gracias a los
+            avances tecnológicos y científicos. Las técnicas modernas permiten a los investigadores recolectar y
+            analizar evidencia con mayor precisión, aumentando la tasa de resolución de casos complejos.
+        </p>
+
+        <p>
+            Entre las herramientas más destacadas se encuentran el análisis de ADN, la luminol para detectar rastros de
+            sangre invisibles, el escaneo 3D de escenas del crimen, y los softwares de análisis del comportamiento
+            criminal. Estas técnicas no solo mejoran la precisión, sino que también reducen los errores en las
+            investigaciones.
+        </p>
+
+        <p>
+            El perfil criminal, por ejemplo, permite identificar patrones de comportamiento del agresor, facilitando la
+            identificación de sospechosos. Además, el uso de bases de datos nacionales e internacionales agiliza la
+            comparación de huellas dactilares, balística y antecedentes penales.
+        </p>
+
+        <p>
+            El futuro de la criminología forense apunta hacia la inteligencia artificial, que será capaz de predecir
+            posibles movimientos criminales a partir de patrones históricos. Sin duda, la combinación de ciencia y
+            tecnología está redefiniendo el camino hacia la justicia.
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-10 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm px-6">
+            <div class="mb-4 sm:mb-0">
+                © 2025 CrimAnálisis. Todos los derechos reservados.
+            </div>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-yellow-400 transition">Aviso Legal</a>
+                <a href="#" class="hover:text-yellow-400 transition">Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="src/app.js"></script>
+
+    <!-- Animaciones CSS opcionales -->
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+
+</body>
+
+</html>
