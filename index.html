@@ -12,7 +12,6 @@
 
 <body>
 
-  <!-- Hero con video de fondo y overlay oscuro -->
   <div class="relative h-screen overflow-hidden">
     <!-- Video de fondo -->
     <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
@@ -24,37 +23,48 @@
     <div class="absolute inset-0 bg-black/70 z-10"></div>
 
     <!-- Navbar -->
-    <header class="absolute top-0 left-0 w-full flex justify-between items-center px-8 py-6 z-30">
-      <div class="text-2xl font-bold text-white tracking-widest uppercase"> 
+    <header class="absolute top-0 left-0 w-full px-4 sm:px-8 py-4 sm:py-6 z-30 flex items-center justify-between">
+      <div class="text-xl sm:text-2xl font-bold text-white tracking-widest uppercase">
         <a href="/">CrimiAnálisis</a>
       </div>
-      <nav class="space-x-6 text-white text-sm uppercase tracking-wide">
-        <a href="/" class="hover:text-yellow-400 transition">Inicio</a>
-        <a href="#servicio" class="hover:text-yellow-400 transition">Servicios</a>
-        <a href="#blog" class="hover:text-yellow-400 transition">Blog</a>
-        <a href="#ubicacion" class="hover:text-yellow-400 transition">Ubicación</a>
-        <a href="#contacto" class="hover:text-yellow-400 transition">Contacto</a>
+
+      <!-- Botón hamburguesa -->
+      <button id="menu-btn" class="text-white md:hidden z-40">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="white" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <!-- Menú -->
+      <nav id="mobile-menu"
+        class="fixed md:static top-0 right-0 h-full md:h-auto w-2/3 md:w-auto bg-black/90 md:bg-transparent text-white p-8 md:p-0 transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:flex md:space-x-6 md:text-sm uppercase tracking-wide z-30">
+        <a href="/" class="block py-2 hover:text-yellow-400 transition">Inicio</a>
+        <a href="#servicio" class="block py-2 hover:text-yellow-400 transition">Servicios</a>
+        <a href="#blog" class="block py-2 hover:text-yellow-400 transition">Blog</a>
+        <a href="#ubicacion" class="block py-2 hover:text-yellow-400 transition">Ubicación</a>
+        <a href="#contacto" class="block py-2 hover:text-yellow-400 transition">Contacto</a>
       </nav>
     </header>
 
     <!-- Contenido principal -->
-    <div class="relative z-20 h-full flex flex-col justify-center items-start px-12 max-w-4xl text-white">
-      <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight uppercase tracking-wide">
+    <div class="relative z-20 h-full flex flex-col justify-center items-start px-4 sm:px-12 max-w-4xl text-white">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight uppercase tracking-wide">
         Expertos en Criminología y Criminalística
       </h1>
-      <p class="text-lg mt-4 max-w-xl text-white/90">
+      <p class="text-base sm:text-lg mt-4 max-w-xl text-white/90">
         Ofrecemos análisis forenses, reconstrucción de hechos y asesoría especializada para casos judiciales,
         corporativos y académicos. Tu confianza es nuestra evidencia más valiosa.
       </p>
-      <div class="mt-6 flex space-x-4">
+      <div class="mt-6 flex flex-wrap gap-4">
         <a href="#servicio"
-          class="px-6 py-3 bg-gray-900 text-white rounded-md font-semibold hover:bg-gray-800 transition">Ver
+          class="px-5 py-3 bg-gray-900 text-white rounded-md font-semibold hover:bg-gray-800 transition text-sm sm:text-base">Ver
           Servicios</a>
         <a href="#contacto"
-          class="px-6 py-3 bg-yellow-400 text-gray-900 rounded-md font-semibold hover:bg-yellow-300 transition">Contáctanos</a>
+          class="px-5 py-3 bg-yellow-400 text-gray-900 rounded-md font-semibold hover:bg-yellow-300 transition text-sm sm:text-base">Contáctanos</a>
       </div>
     </div>
   </div>
+
 
 
   <main>

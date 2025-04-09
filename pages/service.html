@@ -14,12 +14,21 @@
     <div class="text-2xl font-bold text-white tracking-widest uppercase">
       <a href="/">CrimiAnálisis</a>
     </div>
-    <nav class="space-x-6 text-white text-sm uppercase tracking-wide">
-      <a href="/" class="hover:text-yellow-400 transition">Inicio</a>
-      <a href="/#servicio" class="hover:text-yellow-400 transition">Servicios</a>
-      <a href="/#blog" class="hover:text-yellow-400 transition">Blog</a>
-      <a href="/#ubicacion" class="hover:text-yellow-400 transition">Ubicación</a>
-      <a href="/#contacto" class="hover:text-yellow-400 transition">Contacto</a>
+    <!-- Botón hamburguesa -->
+    <button id="menu-btn" class="text-white md:hidden z-40">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke="white" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <!-- Menú -->
+    <nav id="mobile-menu"
+      class="fixed md:static top-0 right-0 h-full md:h-auto w-2/3 md:w-auto bg-black/90 md:bg-transparent text-white p-8 md:p-0 transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:flex md:space-x-6 md:text-sm uppercase tracking-wide z-30">
+      <a href="/" class="block py-2 hover:text-yellow-400 transition">Inicio</a>
+      <a href="#servicio" class="block py-2 hover:text-yellow-400 transition">Servicios</a>
+      <a href="#blog" class="block py-2 hover:text-yellow-400 transition">Blog</a>
+      <a href="#ubicacion" class="block py-2 hover:text-yellow-400 transition">Ubicación</a>
+      <a href="#contacto" class="block py-2 hover:text-yellow-400 transition">Contacto</a>
     </nav>
   </header>
 
@@ -101,6 +110,7 @@
     }
   </style>
 
+  <script src="../src/app.js"></script>
 </body>
 
 </html>
